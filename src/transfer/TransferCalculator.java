@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TransferCalculator {
+    
     private final double[] transfers;
     private final LocalDate[] transferDates;
 
@@ -13,6 +14,7 @@ public class TransferCalculator {
         this.transfers = transfers;
         this.transferDates = transferDates;
     }
+    
     public int calculateLast6MonthsAverageTransfer() {
         LocalDate now = LocalDate.now();
         LocalDate sixMonthsAgo = now.minusMonths(6).minusDays(1);
